@@ -9,6 +9,9 @@ import re
 import sys
 from urllib.parse import unquote
 
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "host"))
 from config import catalog, settings
