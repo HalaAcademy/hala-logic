@@ -16,7 +16,7 @@ class WaveformProfiles(unittest.TestCase):
         self.assertEqual({p.stem for p in files},{e['key'] for e in entries})
         for entry in entries:
             with self.subTest(example=entry['key']):
-                profile=json.loads((ROOT/'configs/waveforms'/f"{entry['key']}.json").read_text())
+                profile=json.loads((ROOT/'configs/waveforms'/f"{entry['key']}.json").read_text(encoding="utf-8"))
                 self.assertEqual(profile['example'],entry['key'])
                 self.assertEqual(profile['elf'],f"build/{entry['image']}.elf")
                 self.assertEqual(profile['protocol'],entry['protocol'])

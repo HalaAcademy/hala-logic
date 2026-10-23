@@ -88,7 +88,7 @@ class GUIStateChecks(unittest.TestCase):
         import tempfile
         app = self.app()
         capture = ROOT / 'examples/captures/pwm.json'
-        metadata = json.loads(capture.read_text())
+        metadata = json.loads(capture.read_text(encoding="utf-8"))
         metadata['registers_after_capture']['baud'] = 9600
         metadata['capture']['stream'] = 0
         with tempfile.TemporaryDirectory() as folder:

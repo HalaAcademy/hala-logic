@@ -532,7 +532,7 @@ class App:
     def load(self, path):
         try:
             path = Path(path)
-            meta = json.loads(path.read_text())
+            meta = json.loads(path.read_text(encoding="utf-8"))
             raw = path.with_suffix(".bin").read_bytes()
             samples = list(struct.unpack("<" + "H" * (len(raw) // 2), raw))
             status = meta["capture"]

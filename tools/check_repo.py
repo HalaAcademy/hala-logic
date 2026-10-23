@@ -25,7 +25,7 @@ def documentation_errors(root):
             if not link or re.match(r"[A-Za-z][\w+.-]*:", link):
                 continue
             if not (doc.parent / link).exists():
-                errors.append(f"Link hỏng {doc.relative_to(root)}: {link}")
+                errors.append(f"Link hỏng {doc.relative_to(root).as_posix()}: {link}")
     return errors, len(docs)
 
 
@@ -34,12 +34,12 @@ def example_errors(root, entries):
     declared = {entry["source"] for entry in entries}
     for main in (root / "examples").rglob("main.c"):
         if main.relative_to(root).as_posix() not in declared:
-            errors.append("Ví dụ ngoài danh mục: " + str(main.relative_to(root)))
+            errors.append("Ví dụ ngoài danh mục: " + main.relative_to(root).as_posix())
     for entry in entries:
         folder = root / entry["source"]
         for file in (folder, folder.with_name("README.md"), folder.with_name("Makefile")):
             if not file.is_file():
-                errors.append("Ví dụ thiếu " + str(file.relative_to(root)))
+                errors.append("Ví dụ thiếu " + file.relative_to(root).as_posix())
     return errors
 
 

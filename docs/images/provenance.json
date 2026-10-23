@@ -3,7 +3,7 @@
   "platform": "macOS Apple Silicon; Python 3.14.6/Tk",
   "method": "CUA native window screenshot; exact pixel crop; added captions outside crop; no waveform or UI text redrawn",
   "raw_storage": "Development review archive outside public repository; raw hashes retained here",
-  "gui_sha256": "5f843af6c1dc1085ab74366398aab7e50d4a77e05b597bc28e82ca1359873171",
+  "gui_sha256": "d43a9c828306c02e54bf9e6c15e09d368e8b0af4a0658762b4100ff1b5c0b0b9",
   "screenshots": [
     {
       "image": "01-ket-noi.png",
