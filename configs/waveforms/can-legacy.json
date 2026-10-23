@@ -1,0 +1,15 @@
+{
+  "example": "can-legacy",
+  "title": "CAN · Phát 20 kbit/s (cũ)",
+  "elf": "build/student_can.elf",
+  "test_module": "tests/hardware/acceptance.py",
+  "suite_step": "acceptance",
+  "capture_stem": "can",
+  "protocol": "CAN",
+  "decode_bit": 0,
+  "baud": 20000,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": null,
+  "expected": "ID 0x123, data DE AD, CRC đúng; không có ACK trong ví dụ cũ."
+}

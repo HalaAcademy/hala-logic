@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-23",
+  "platform": "macOS Apple Silicon; Python 3.14.6/Tk",
+  "method": "CUA native window screenshot; exact pixel crop; added captions outside crop; no waveform or UI text redrawn",
+  "raw_storage": "Development review archive outside public repository; raw hashes retained here",
+  "gui_sha256": "5f843af6c1dc1085ab74366398aab7e50d4a77e05b597bc28e82ca1359873171",
+  "screenshots": [
+    {
+      "image": "01-ket-noi.png",
+      "raw_file": "01-ket-noi.jpg",
+      "crop_xyxy": [
+        20,
+        72,
+        2340,
+        612
+      ],
+      "title": "Bước 2–3 · Kết nối USB và cấu hình lấy mẫu",
+      "caption": "1. Chọn COM/USB → Kết nối     2. Chọn giao thức     3. Đặt Sample Hz / Số mẫu → Bắt đầu thu",
+      "capture": "examples/captures/pwm.json",
+      "context": "USB connection confirmed live; PWM metadata already open before the new capture",
+      "raw_size": [
+        2360,
+        1664
+      ],
+      "raw_sha256": "8fc3d9a437795eeda3fe682bf3773f42cd1fca5e75a6782a003a98171be4d00c",
+      "sha256": "a54c1adc75393c48cdae613004e606983fa051b5b0625758fd6e52521224f3ea",
+      "size": [
+        2320,
+        706
+      ],
+      "capture_sha256": "71012c0f825b952eb5de6d3d43fc26ed33eca1b31f8020e6b71ff4fa95f20f35"
+    },
+    {
+      "image": "02-song.png",
+      "raw_file": "02-song.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        1502
+      ],
+      "title": "Bước 3 · Xem sóng PWM thật trong cửa sổ 8 ms",
+      "caption": "Bấm + năm lần sau khi thu 8192 mẫu ở 32000 S/s · PB0: PWM · PB8/PB10: mức tĩnh",
+      "capture": "examples/captures/pwm.json",
+      "context": "Fresh live USB capture 20261023-214649-045899; five zoom-in actions",
+      "raw_size": [
+        2360,
+        1664
+      ],
+      "raw_sha256": "24eb08ac76f431821bff2c8d3ab0f514b2b6a87d057af2af1fb608e4cc5c0665",
+      "sha256": "9b409ea8b09efc592112d0d5fe6f23b46ed042413f3e069c226baa795b1c245d",
+      "size": [
+        2248,
+        1034
+      ],
+      "capture_sha256": "71012c0f825b952eb5de6d3d43fc26ed33eca1b31f8020e6b71ff4fa95f20f35"
+    },
+    {
+      "image": "03-phep-do.png",
+      "raw_file": "03-phep-do.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        952
+      ],
+      "title": "Bước 4 · Đọc bảng kết quả / phép đo",
+      "caption": "PB0: 1000 Hz · Chu kỳ: 1000 µs · Cao/thấp: 500 µs · Duty: 50% · Chưa hiệu chuẩn ngoài",
+      "capture": "examples/captures/pwm.json",
+      "context": "Same fresh PWM capture as waveform screenshot",
+      "raw_size": [
+        2360,
+        1664
+      ],
+      "raw_sha256": "5bd71c4c3075b49a8d1bebd47ecc592cbafc5b601f20c191c1f2cfcddc991c0d",
+      "sha256": "819fe78fd87e006b914d7c918830612d9e98873b262d48994b797ce1244bc23e",
+      "size": [
+        2248,
+        484
+      ],
+      "capture_sha256": "71012c0f825b952eb5de6d3d43fc26ed33eca1b31f8020e6b71ff4fa95f20f35"
+    },
+    {
+      "image": "04-goi-tin.png",
+      "raw_file": "04-goi-tin.jpg",
+      "crop_xyxy": [
+        56,
+        674,
+        2304,
+        984
+      ],
+      "title": "Bước 5 · Xem gói tin từ capture CAN FD mẫu",
+      "caption": "ID 29-bit · Payload 64 byte · BRS · Chỉ gói đầu có ACK · Xem JSON để đọc đủ payload",
+      "capture": "examples/captures/canfd-ext-tx.json",
+      "context": "Offline replay of historical real GPIO capture; not a new CAN FD hardware test",
+      "raw_size": [
+        2360,
+        1664
+      ],
+      "raw_sha256": "93a33f81f5fa545478d0d25474a1931044b70a8ad91bb3c1e52c85eb827bf819",
+      "sha256": "dd61140b43a6769e7a6c7333a8dc9daa7947d4da33d88f30059c2daa0e4b3416",
+      "size": [
+        2248,
+        476
+      ],
+      "capture_sha256": "09f8873502530cbd6077a17f14eef9e831890a2f529ce3efb1a8260a4dc3dd01"
+    }
+  ]
+}

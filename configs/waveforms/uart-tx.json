@@ -1,0 +1,15 @@
+{
+  "example": "uart-tx",
+  "title": "UART · Phát 9600",
+  "elf": "build/student_uart.elf",
+  "test_module": "tests/hardware/acceptance.py",
+  "suite_step": "acceptance",
+  "capture_stem": "uart",
+  "protocol": "UART",
+  "decode_bit": 0,
+  "baud": 9600,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": null,
+  "expected": "Chuỗi Hello BluePill\\r\\n; UART 8N1. Có thể có byte đầu/cuối không đủ trong cửa sổ thu."
+}

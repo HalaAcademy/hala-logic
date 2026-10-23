@@ -1,0 +1,60 @@
+{
+  "screenshots": [
+    {
+      "image": "01-ket-noi.png",
+      "raw_file": "01-ket-noi.jpg",
+      "crop_xyxy": [
+        20,
+        72,
+        2340,
+        612
+      ],
+      "title": "Bước 2–3 · Kết nối USB và cấu hình lấy mẫu",
+      "caption": "1. Chọn COM/USB → Kết nối     2. Chọn giao thức     3. Đặt Sample Hz / Số mẫu → Bắt đầu thu",
+      "capture": "examples/captures/pwm.json",
+      "context": "USB connection confirmed live; PWM metadata already open before the new capture"
+    },
+    {
+      "image": "02-song.png",
+      "raw_file": "02-song.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        1502
+      ],
+      "title": "Bước 3 · Xem sóng PWM thật trong cửa sổ 8 ms",
+      "caption": "Bấm + năm lần sau khi thu 8192 mẫu ở 32000 S/s · PB0: PWM · PB8/PB10: mức tĩnh",
+      "capture": "examples/captures/pwm.json",
+      "context": "Fresh live USB capture 20261023-214649-045899; five zoom-in actions"
+    },
+    {
+      "image": "03-phep-do.png",
+      "raw_file": "03-phep-do.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        952
+      ],
+      "title": "Bước 4 · Đọc bảng kết quả / phép đo",
+      "caption": "PB0: 1000 Hz · Chu kỳ: 1000 µs · Cao/thấp: 500 µs · Duty: 50% · Chưa hiệu chuẩn ngoài",
+      "capture": "examples/captures/pwm.json",
+      "context": "Same fresh PWM capture as waveform screenshot"
+    },
+    {
+      "image": "04-goi-tin.png",
+      "raw_file": "04-goi-tin.jpg",
+      "crop_xyxy": [
+        56,
+        674,
+        2304,
+        984
+      ],
+      "title": "Bước 5 · Xem gói tin từ capture CAN FD mẫu",
+      "caption": "ID 29-bit · Payload 64 byte · BRS · Chỉ gói đầu có ACK · Xem JSON để đọc đủ payload",
+      "capture": "examples/captures/canfd-ext-tx.json",
+      "context": "Offline replay of historical real GPIO capture; not a new CAN FD hardware test"
+    }
+  ]
+}

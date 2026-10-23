@@ -1,0 +1,22 @@
+{
+  "implemented": [
+    "TX 9600 fixed frame",
+    "RX 1000 ID12 subscriber 2 bytes",
+    "ID22 publisher response",
+    "enhanced checksum",
+    "PID/checksum rejection"
+  ],
+  "pending": [
+    "classic checksum/diagnostics",
+    "scheduler",
+    "event/sporadic frames",
+    "sleep/wakeup",
+    "arbitrary frame tables"
+  ],
+  "profile": "LIN22A-LOGIC-v1",
+  "status": "PARTIAL_IMPLEMENTATION",
+  "electrical": "real 3.3V GPIO pads on one MCU; no bus transceiver/no jumper",
+  "timing": "shared HSE; timer nominal times, no absolute calibration",
+  "B_interface": "physical GPIO IDR/BSRR; A owns PB8 drive mode during no-wire stimulus; no virtual registers",
+  "isolation": "privileged B and convention-based resource ownership; not a hardware sandbox"
+}

@@ -1,0 +1,19 @@
+{
+  "example": "lin-rx",
+  "title": "LIN · subscriber / publisher",
+  "elf": "build/student_lin_rx.elf",
+  "test_module": "tests/hardware/lin_rx_acceptance.py",
+  "suite_step": "lin_rx_acceptance",
+  "capture_stem": "publisher",
+  "protocol": "LIN",
+  "decode_bit": 8,
+  "baud": 1000,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": {
+    "id": "0x22",
+    "data": "",
+    "header_only": true
+  },
+  "expected": "Gửi LIN header ID 0x22; thiết bị trả 34 56 và enhanced checksum. ID 0x12 là subscriber."
+}

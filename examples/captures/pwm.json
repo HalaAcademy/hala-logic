@@ -1,0 +1,35 @@
+{
+  "capture": {
+    "id": 3,
+    "state": 2,
+    "count": 8192,
+    "remaining": 2048,
+    "ticks": 2250,
+    "requested_hz": 32000,
+    "port": 1,
+    "mask": 1281,
+    "t0_cycles": 1678702425,
+    "t0_ms": 1096658,
+    "dma_flags": 48,
+    "stream": 1,
+    "produced": 8192,
+    "target": 8192,
+    "ready0": 0,
+    "ready1": 0,
+    "lost": 0,
+    "host_stream": {
+      "max_poll_gap_ms": 12.612624999746913,
+      "max_block_service_ms": 11.042750000342494,
+      "half_buffer_budget_ms": 32.0
+    }
+  },
+  "monitor": null,
+  "registers_after_capture": {
+    "stimulus": null,
+    "decode_bit": 0,
+    "protocol": "GPIO"
+  },
+  "raw_sha256": "71012c0f825b952eb5de6d3d43fc26ed33eca1b31f8020e6b71ff4fa95f20f35",
+  "decoded": [],
+  "timing_note": "Relative timestamps use (index+1)*TIM2_ticks/72MHz; DMA bus latency and oscillator tolerance are not calibrated."
+}

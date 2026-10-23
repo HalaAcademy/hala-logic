@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "key": "pwm",
+      "title": "GPIO · PWM 1 kHz",
+      "image": "student",
+      "source": "examples/gpio/pwm/main.c",
+      "protocol": "GPIO",
+      "direction": "tx",
+      "baud": 1000
+    },
+    {
+      "key": "uart-tx",
+      "title": "UART · Phát 9600",
+      "image": "student_uart",
+      "source": "examples/uart/transmit/main.c",
+      "protocol": "UART",
+      "direction": "tx",
+      "baud": 9600,
+      "sample_hz": 100000,
+      "sample_count": 2048,
+      "legacy": true
+    },
+    {
+      "key": "uart-rx",
+      "title": "UART · Nhận và trả lời",
+      "image": "student_uart_rx",
+      "source": "examples/uart/receive/main.c",
+      "protocol": "UART",
+      "direction": "rx",
+      "baud": 1000
+    },
+    {
+      "key": "lin-tx",
+      "title": "LIN · Phát 9600",
+      "image": "student_lin",
+      "source": "examples/lin/transmit/main.c",
+      "protocol": "LIN",
+      "direction": "tx",
+      "baud": 9600,
+      "sample_hz": 100000,
+      "sample_count": 2048,
+      "legacy": true
+    },
+    {
+      "key": "lin-rx",
+      "title": "LIN · subscriber / publisher",
+      "image": "student_lin_rx",
+      "source": "examples/lin/subscriber_publisher/main.c",
+      "protocol": "LIN",
+      "direction": "rx",
+      "baud": 1000
+    },
+    {
+      "key": "can-legacy",
+      "title": "CAN · Phát 20 kbit/s (cũ)",
+      "image": "student_can",
+      "source": "examples/can/transmit_legacy/main.c",
+      "protocol": "CAN",
+      "direction": "tx",
+      "baud": 20000,
+      "sample_hz": 200000,
+      "sample_count": 2048,
+      "legacy": true
+    },
+    {
+      "key": "can-rx",
+      "title": "CAN · Nhận 11/29-bit, DATA/RTR",
+      "image": "student_can_rx",
+      "source": "examples/can/receive/main.c",
+      "protocol": "CAN",
+      "direction": "rx",
+      "baud": 1000
+    },
+    {
+      "key": "can-tx",
+      "title": "CAN · Phát DATA 11-bit",
+      "image": "student_can2_tx",
+      "source": "examples/can/transmit/main.c",
+      "protocol": "CAN",
+      "direction": "tx",
+      "baud": 1000,
+      "extended": false,
+      "remote": false
+    },
+    {
+      "key": "can-tx-ext",
+      "title": "CAN · Phát DATA 29-bit",
+      "image": "student_can2_tx_ext",
+      "source": "examples/can/transmit_extended/main.c",
+      "protocol": "CAN",
+      "direction": "tx",
+      "baud": 1000,
+      "extended": true,
+      "remote": false
+    },
+    {
+      "key": "can-tx-rtr",
+      "title": "CAN · Phát RTR 11-bit",
+      "image": "student_can2_tx_rtr",
+      "source": "examples/can/remote_request/main.c",
+      "protocol": "CAN",
+      "direction": "tx",
+      "baud": 1000,
+      "extended": false,
+      "remote": true
+    },
+    {
+      "key": "can-tx-ext-rtr",
+      "title": "CAN · Phát RTR 29-bit",
+      "image": "student_can2_tx_ext_rtr",
+      "source": "examples/can/remote_request_extended/main.c",
+      "protocol": "CAN",
+      "direction": "tx",
+      "baud": 1000,
+      "extended": true,
+      "remote": true
+    },
+    {
+      "key": "canfd-rx",
+      "title": "CAN FD · Nhận 11/29-bit",
+      "image": "student_canfd_rx",
+      "source": "examples/canfd/receive/main.c",
+      "protocol": "CAN FD",
+      "direction": "rx",
+      "baud": 1000
+    },
+    {
+      "key": "canfd-tx",
+      "title": "CAN FD · Phát 11-bit",
+      "image": "student_canfd_tx",
+      "source": "examples/canfd/transmit/main.c",
+      "protocol": "CAN FD",
+      "direction": "tx",
+      "baud": 1000,
+      "extended": false
+    },
+    {
+      "key": "canfd-tx-ext",
+      "title": "CAN FD · Phát 29-bit",
+      "image": "student_canfd_tx_ext",
+      "source": "examples/canfd/transmit_extended/main.c",
+      "protocol": "CAN FD",
+      "direction": "tx",
+      "baud": 1000,
+      "extended": true
+    },
+    {
+      "key": "flexray-rx-a",
+      "title": "FlexRay · Nhận kênh A",
+      "image": "student_flexray_rx",
+      "source": "examples/flexray/receive_channel_a/main.c",
+      "protocol": "FlexRay",
+      "direction": "rx",
+      "baud": 1000,
+      "channel": "A"
+    },
+    {
+      "key": "flexray-rx-b",
+      "title": "FlexRay · Nhận kênh B",
+      "image": "student_flexray_rx_b",
+      "source": "examples/flexray/receive_channel_b/main.c",
+      "protocol": "FlexRay",
+      "direction": "rx",
+      "baud": 1000,
+      "channel": "B"
+    },
+    {
+      "key": "flexray-tx-a",
+      "title": "FlexRay · Phát kênh A",
+      "image": "student_flexray_tx",
+      "source": "examples/flexray/transmit_channel_a/main.c",
+      "protocol": "FlexRay",
+      "direction": "tx",
+      "baud": 1000,
+      "channel": "A"
+    },
+    {
+      "key": "flexray-tx-b",
+      "title": "FlexRay · Phát kênh B",
+      "image": "student_flexray_tx_b",
+      "source": "examples/flexray/transmit_channel_b/main.c",
+      "protocol": "FlexRay",
+      "direction": "tx",
+      "baud": 1000,
+      "channel": "B"
+    },
+    {
+      "key": "fault",
+      "title": "Chẩn đoán · cố ý tạo fault",
+      "image": "student_fault",
+      "source": "examples/system/fault/main.c",
+      "protocol": "GPIO",
+      "direction": "fault",
+      "baud": 1000
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "example": "canfd-rx",
+  "title": "CAN FD · Nhận 11/29-bit",
+  "elf": "build/student_canfd_rx.elf",
+  "test_module": "tests/hardware/canfd_rx_acceptance.py",
+  "suite_step": "canfd_rx_acceptance",
+  "capture_stem": "brs1-len64",
+  "protocol": "CAN FD",
+  "decode_bit": 8,
+  "baud": 1000,
+  "data_baud": 2000,
+  "channel": null,
+  "host_signal": {
+    "id": "0x5AA",
+    "data": "40 65 8A AF D4 F9 1E 43 68 8D B2 D7 FC 21 46 6B 90 B5 DA FF 24 49 6E 93 B8 DD 02 27 4C 71 96 BB E0 05 2A 4F 74 99 BE E3 08 2D 52 77 9C C1 E6 0B 30 55 7A 9F C4 E9 0E 33 58 7D A2 C7 EC 11 36 5B",
+    "brs": true
+  },
+  "expected": "ID 0x5AA, payload 64 byte, BRS 1000→2000 bit/s, CRC21/stuff-count đúng, ACK và buffer nhận đúng."
+}

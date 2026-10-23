@@ -1,0 +1,24 @@
+{
+  "implemented": [
+    "static FRAME TX/RX",
+    "header CRC11/frame CRC24",
+    "channel A/B separately",
+    "payload 0/2/16/254 RX",
+    "254-byte TX",
+    "wrong-channel/header/frame CRC rejection"
+  ],
+  "pending": [
+    "static TDMA scheduler",
+    "dynamic minislots",
+    "wake/startup/sync",
+    "simultaneous dual channel",
+    "clock correction",
+    "complete cluster state machines"
+  ],
+  "profile": "FR21A-TEACH-v1",
+  "status": "PARTIAL_IMPLEMENTATION",
+  "electrical": "real 3.3V GPIO pads on one MCU; no bus transceiver/no jumper",
+  "timing": "shared HSE; timer nominal times, no absolute calibration",
+  "B_interface": "physical GPIO IDR/BSRR; A owns PB8 drive mode during no-wire stimulus; no virtual registers",
+  "isolation": "privileged B and convention-based resource ownership; not a hardware sandbox"
+}

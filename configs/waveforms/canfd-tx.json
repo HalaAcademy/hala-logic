@@ -1,0 +1,15 @@
+{
+  "example": "canfd-tx",
+  "title": "CAN FD · Phát 11-bit",
+  "elf": "build/student_canfd_tx.elf",
+  "test_module": "tests/hardware/advanced_tx_acceptance.py",
+  "suite_step": "advanced_tx_acceptance",
+  "capture_stem": "canfd-B-TX-ACK",
+  "protocol": "CAN FD",
+  "decode_bit": 8,
+  "baud": 1000,
+  "data_baud": 2000,
+  "channel": null,
+  "host_signal": null,
+  "expected": "ID 0x5AA, payload 00..3F (64 byte), BRS, CRC21; peer chỉ ACK gói đầu."
+}

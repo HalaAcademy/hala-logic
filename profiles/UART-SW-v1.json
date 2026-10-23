@@ -1,0 +1,22 @@
+{
+  "implemented": [
+    "TX 9600 8N1",
+    "RX 1000 8N1 TIM4",
+    "GPIO PB0/PB8",
+    "XOR echo",
+    "framing-error rejection"
+  ],
+  "pending": [
+    "5..9 data bits",
+    "parity modes",
+    "stop 1.5/2",
+    "all RX implementations",
+    "autobaud qualification"
+  ],
+  "profile": "UART-SW-v1",
+  "status": "PARTIAL_IMPLEMENTATION",
+  "electrical": "real 3.3V GPIO pads on one MCU; no bus transceiver/no jumper",
+  "timing": "shared HSE; timer nominal times, no absolute calibration",
+  "B_interface": "physical GPIO IDR/BSRR; A owns PB8 drive mode during no-wire stimulus; no virtual registers",
+  "isolation": "privileged B and convention-based resource ownership; not a hardware sandbox"
+}

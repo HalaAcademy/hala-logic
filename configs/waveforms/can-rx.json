@@ -1,0 +1,18 @@
+{
+  "example": "can-rx",
+  "title": "CAN · Nhận 11/29-bit, DATA/RTR",
+  "elf": "build/student_can_rx.elf",
+  "test_module": "tests/hardware/can_rx_acceptance.py",
+  "suite_step": "can_rx_acceptance",
+  "capture_stem": "base-DEAD",
+  "protocol": "CAN",
+  "decode_bit": 8,
+  "baud": 1000,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": {
+    "id": "0x123",
+    "data": "DE AD"
+  },
+  "expected": "ID 0x123, data DE AD, CRC đúng và ACK; rx_count tăng 1. Ma trận còn kiểm DATA/RTR 11/29-bit, DLC 0..8 và CRC lỗi."
+}

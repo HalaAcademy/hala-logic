@@ -1,0 +1,17 @@
+{
+  "example": "uart-rx",
+  "title": "UART · Nhận và trả lời",
+  "elf": "build/student_uart_rx.elf",
+  "test_module": "tests/hardware/bridge_acceptance.py",
+  "suite_step": "bridge_acceptance",
+  "capture_stem": "relay-UART",
+  "protocol": "UART",
+  "decode_bit": 8,
+  "baud": 1000,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": {
+    "data": "52 45 4C 41 59"
+  },
+  "expected": "Bus RX nhận RELAY; PB0 trả relay bằng XOR 0x20; rx_count tăng 5."
+}

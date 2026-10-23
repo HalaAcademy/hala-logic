@@ -1,0 +1,660 @@
+{
+  "updated_at": "2026-10-23T19:32:36.413167+07:00",
+  "status": "IN_PROGRESS_NOT_ALL_PHASES_COMPLETE",
+  "phases": {
+    "P00": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P01": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P02": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P03": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P04": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P05": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P06": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P07": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P08": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P09": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P10": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P11": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P12": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P13": {
+      "status": "IN_PROGRESS",
+      "completion_gate_passed": false
+    },
+    "P14": {
+      "status": "PLANNED",
+      "completion_gate_passed": false
+    }
+  },
+  "example_families": {
+    "G01": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "G02": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "G03": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "G04": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "G05": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "G06": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "G07": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "G08": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U01": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "U02": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "U03": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U04": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "U05": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U06": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U07": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "U08": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U09": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U10": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U11": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "U12": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L01": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "L02": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L03": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "L04": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "L05": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "L06": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "L07": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L08": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L09": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L10": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L11": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L12": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L13": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "L14": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "L15": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C01": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C02": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C03": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C04": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C05": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C06": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C07": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C08": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "C09": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C10": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C11": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C12": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C13": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C14": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C15": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C16": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C17": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "C18": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "F01": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F02": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F03": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F04": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F05": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F06": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F07": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F08": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F09": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F10": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "F11": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "F12": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "F13": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "F14": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "F15": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "F16": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R01": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R02": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R03": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R04": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R05": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R06": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R07": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R08": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R09": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R10": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R11": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R12": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R13": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R14": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R15": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R16": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R17": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "R18": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "R19": {
+      "status": "PLANNED",
+      "full_family_passed": false
+    },
+    "X01": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X02": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X03": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X04": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X05": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X06": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X07": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    },
+    "X08": {
+      "status": "PARTIAL_CASES_IMPLEMENTED",
+      "full_family_passed": false
+    }
+  },
+  "measurements": {
+    "M01": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M02": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M03": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M04": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M05": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M06": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M07": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M08": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M09": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M10": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M15": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M16": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M17": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M11": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M12": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M13": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M14": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M18": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M19": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M20": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M21": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M22": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M23": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M24": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M25": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M26": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M27": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M28": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M31": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M29": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M30": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M32": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M33": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M34": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M35": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M36": {
+      "status": "PLANNED",
+      "full_function_passed": false
+    },
+    "M37": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M38": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M39": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M40": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M41": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M42": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M43": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    },
+    "M44": {
+      "status": "PARTIAL_IMPLEMENTATION",
+      "full_function_passed": false
+    }
+  },
+  "manual_pending": [
+    "cold power cycle",
+    "absolute time calibration",
+    "physical Safe strap optional test"
+  ],
+  "notes": [
+    "Per-case PASS does not close a whole 96-family requirement. See latest suite reports for implemented scope.",
+    "All master completion gates remain open until their full acceptance criteria are met.",
+    "A/B use physical pads; RAM holds waveform/capture buffers.",
+    "Fresh failures/INVALID runs are retained and superseded only by a new complete measured run."
+  ],
+  "implemented_milestone": {
+    "A_version": "BP-AB-MASTER-20261023-R002-dev9",
+    "suite": "build/reports/suite-20261023-190847/report.json",
+    "suite_status": "PASS_IMPLEMENTED_SCOPE",
+    "independent_audit": "build/reports/audit-20261023-193644/report.json",
+    "B_ELF_GDB_passed": 18,
+    "host_unit_tests_passed": 40,
+    "CAN_RX_cases_passed": 42,
+    "CAN_TX_presets_passed": 4,
+    "CANFD_RX_cases_passed": 70,
+    "advanced_TX_cases_passed": 4,
+    "FlexRay_RX_cases_passed": 16,
+    "LIN_RX_cases_passed": 5,
+    "physical_GPIO_no_jumpers": true,
+    "virtual_GPIO": false,
+    "CANFD_host_max_block_service_ms": 22.622,
+    "CANFD_half_buffer_budget_ms": 64,
+    "GUI_offline_checks": "build/reports/gui-20261023-191717/report.json"
+  }
+}

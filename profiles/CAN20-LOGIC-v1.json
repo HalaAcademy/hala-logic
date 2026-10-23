@@ -1,0 +1,25 @@
+{
+  "implemented": [
+    "11/29-bit DATA/RTR frame TX at 1000",
+    "11/29-bit DATA/RTR RX and ACK at 1000, DLC 0..8",
+    "legacy base TX at 20000",
+    "CRC15/stuffing",
+    "ACK/missing-ACK observer on real B pad",
+    "CRC rejection/recovery"
+  ],
+  "pending": [
+    "automatic RTR data response",
+    "acceptance filters and queues",
+    "arbitration",
+    "resynchronization",
+    "error flags/counters/bus-off",
+    "retry"
+  ],
+  "profile": "CAN20-LOGIC-v1",
+  "status": "PARTIAL_IMPLEMENTATION",
+  "electrical": "real 3.3V GPIO pads on one MCU; no bus transceiver/no jumper",
+  "timing": "shared HSE; timer nominal times, no absolute calibration",
+  "B_interface": "physical GPIO IDR/BSRR; A owns PB8 drive mode during no-wire stimulus; no virtual registers",
+  "isolation": "privileged B and convention-based resource ownership; not a hardware sandbox",
+  "evidence": "Historical development archive (outside public repository): ab/build/reports/can-rx-20261023-182519 + can-modes-tx-20261023-182623 (later runs supersede)"
+}

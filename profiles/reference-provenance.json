@@ -1,0 +1,25 @@
+{
+  "FlexRay21A": {
+    "url": "https://www.plus.ac.at/wp-content/uploads/2021/02/FlexRayCommunicationSystem.pdf",
+    "sha256": "e92db3e5729a4e8b4cb259385194b2876e54614cf709c6e216ab639670f3646f",
+    "used_sections": [
+      "3: coding",
+      "4: frame/CRC"
+    ],
+    "redistribute_pdf": false
+  },
+  "CAN20": {
+    "url": "https://wiki.control.fel.cvut.cz/nms/files/m68k/mo_cpu2/datasheets/can2spec.pdf",
+    "used_sections": [
+      "Part B: standard/extended DATA and remote frame format, stuffing/CRC"
+    ],
+    "redistribute_pdf": false
+  },
+  "CANFD_frames": {
+    "url": "https://onlinedocs.microchip.com/oxy/GUID-7112B2B7-9230-4367-BBFB-942C5B51D8BF-en-US-15/GUID-CA3168F9-A499-4776-BB2E-213BA6C3C1F1.html",
+    "used_sections": [
+      "CAN FD 11/29-bit arbitration/control fields"
+    ],
+    "redistribute_pdf": false
+  }
+}

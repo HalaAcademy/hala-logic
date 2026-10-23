@@ -1,0 +1,15 @@
+{
+  "example": "fault",
+  "title": "Chẩn đoán · cố ý tạo fault",
+  "elf": "build/student_fault.elf",
+  "test_module": "tests/hardware/acceptance.py",
+  "suite_step": "acceptance",
+  "capture_stem": null,
+  "protocol": "GPIO",
+  "decode_bit": null,
+  "baud": null,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": null,
+  "expected": "Cố ý thực thi lệnh không hợp lệ; monitor vào Safe, running=0, boot_reason=5, fault_pc thuộc 0x08006000..0x0800FFFF. Không có sóng truyền thông để giải mã."
+}

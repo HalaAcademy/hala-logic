@@ -1,0 +1,8 @@
+{
+  "tools": {
+    "gdb": "arm-none-eabi-gdb",
+    "openocd": "openocd"
+  },
+  "swd_khz": 25,
+  "serial_port": null
+}

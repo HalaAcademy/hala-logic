@@ -1,0 +1,15 @@
+{
+  "example": "lin-tx",
+  "title": "LIN · Phát 9600",
+  "elf": "build/student_lin.elf",
+  "test_module": "tests/hardware/acceptance.py",
+  "suite_step": "acceptance",
+  "capture_stem": "lin",
+  "protocol": "LIN",
+  "decode_bit": 0,
+  "baud": 9600,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": null,
+  "expected": "ID 0x12, PID 0x92, data 34 56; parity/checksum đúng."
+}

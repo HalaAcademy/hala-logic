@@ -1,0 +1,24 @@
+{
+  "implemented": [
+    "11/29-bit FD RX all 16 DLC",
+    "BRS off/on 1000/2000",
+    "CRC17/21",
+    "ISO stuff count/parity/fixed stuffing",
+    "11/29 TX64 BRS (see latest advanced-tx qualification)",
+    "ACK observer and host peer ACK schedule"
+  ],
+  "pending": [
+    "arbitration",
+    "full error-confinement",
+    "retransmission",
+    "filters/queues and mixed Classical traffic",
+    "independent-clock qualification"
+  ],
+  "profile": "CANFD-ISO2015-LOGIC-v1",
+  "status": "PARTIAL_IMPLEMENTATION",
+  "electrical": "real 3.3V GPIO pads on one MCU; no bus transceiver/no jumper",
+  "timing": "shared HSE; timer nominal times, no absolute calibration",
+  "B_interface": "physical GPIO IDR/BSRR; A owns PB8 drive mode during no-wire stimulus; no virtual registers",
+  "isolation": "privileged B and convention-based resource ownership; not a hardware sandbox",
+  "evidence": "Historical development archive (outside public repository): ab/build/reports/canfd-rx-20261023-192451/report.json"
+}

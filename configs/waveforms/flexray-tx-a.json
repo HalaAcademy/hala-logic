@@ -1,0 +1,15 @@
+{
+  "example": "flexray-tx-a",
+  "title": "FlexRay · Phát kênh A",
+  "elf": "build/student_flexray_tx.elf",
+  "test_module": "tests/hardware/advanced_tx_acceptance.py",
+  "suite_step": "advanced_tx_acceptance",
+  "capture_stem": "flexray-B-TX-A",
+  "protocol": "FlexRay",
+  "decode_bit": 0,
+  "baud": 1000,
+  "data_baud": null,
+  "channel": "A",
+  "host_signal": null,
+  "expected": "Kênh A, ID 0x123, cycle 7, payload 00..FD (254 byte); header/frame CRC đúng."
+}

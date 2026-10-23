@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "tools": {
+    "gcc": "arm-none-eabi-gcc",
+    "objcopy": "arm-none-eabi-objcopy",
+    "gdb": "arm-none-eabi-gdb",
+    "openocd": "openocd"
+  },
+  "openocd_config": "configs/openocd/stlink.cfg",
+  "swd_khz": 50,
+  "serial_port": null,
+  "output_dir": "build",
+  "gpio": {
+    "port": "B",
+    "bus_rx": 8,
+    "host_peer": 10,
+    "device_tx": 0
+  },
+  "capture": {
+    "sample_hz": 32000,
+    "sample_count": 8192,
+    "slow_sample_hz": 16000
+  },
+  "gdb_endpoint": "127.0.0.1:3333",
+  "usb": {
+    "vid": 4617,
+    "pid": 1,
+    "product": "BluePill USB CDC"
+  }
+}

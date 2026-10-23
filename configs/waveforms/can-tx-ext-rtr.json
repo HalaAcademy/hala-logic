@@ -1,0 +1,15 @@
+{
+  "example": "can-tx-ext-rtr",
+  "title": "CAN · Phát RTR 29-bit",
+  "elf": "build/student_can2_tx_ext_rtr.elf",
+  "test_module": "tests/hardware/can_modes_tx_acceptance.py",
+  "suite_step": "can_modes_tx_acceptance",
+  "capture_stem": "student_can2_tx_ext_rtr",
+  "protocol": "CAN",
+  "decode_bit": 8,
+  "baud": 1000,
+  "data_baud": null,
+  "channel": null,
+  "host_signal": null,
+  "expected": "ID 29-bit 0x12345678, RTR, DLC 8, không có data; CRC đúng."
+}
