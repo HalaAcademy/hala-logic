@@ -104,6 +104,56 @@
         476
       ],
       "capture_sha256": "09f8873502530cbd6077a17f14eef9e831890a2f529ce3efb1a8260a4dc3dd01"
+    },
+    {
+      "image": "05-canfd-song.png",
+      "raw_file": "05-canfd-song.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        1502
+      ],
+      "title": "Bước 5a · Sóng CAN FD thật trên phần cứng (11-bit/29-bit, 64B, BRS)",
+      "caption": "Thu 32768 mẫu ở 16000 S/s · PB0: RX · PB8: Bus · PB10: TX Host · STM32F103 phản hồi ACK",
+      "capture": "examples/captures/canfd-tx.json",
+      "context": "Live hardware acceptance test on STM32F103 with ST-Link V2; verified with GDB peer ACK",
+      "raw_size": [
+        2360,
+        1600
+      ],
+      "raw_sha256": "f584208b79ef2942961f900a88b91b4f1b66c0d54e43dff846dc7763ace6d362",
+      "sha256": "0b4f06270dffce69ebc0f8254f817987e9388235b59aaadbb849cedc349b2132",
+      "size": [
+        2248,
+        1034
+      ],
+      "capture_sha256": "1ce20b7fde0ed877fa2373ce326e28f7f7ba13dfb626a643e824e2167252e10f"
+    },
+    {
+      "image": "06-flexray-song.png",
+      "raw_file": "06-flexray-song.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        1502
+      ],
+      "title": "Bước 5b · Sóng FlexRay thật trên phần cứng (Kênh A, payload 254 byte)",
+      "caption": "Thu 98304 mẫu ở 16000 S/s · Static Frame ID 0x123, Cycle 7 · Header CRC và Frame CRC OK",
+      "capture": "examples/captures/flexray-a.json",
+      "context": "Live hardware acceptance test on STM32F103; Channel A 254B payload; verified with GDB",
+      "raw_size": [
+        2360,
+        1600
+      ],
+      "raw_sha256": "0d7de42b8412cdc35830e5bc1fb9634e92b8a9891d1aee014983fe410ca366e2",
+      "sha256": "c3ef20169ee83bd4bc2efbab70e0290585586cedc94d1bbac3bc7f538e3ada14",
+      "size": [
+        2248,
+        1034
+      ],
+      "capture_sha256": "5ff1985c93d08e47fa3e44a5a2e2ec3065dee0b7cc071bcd8e03d8f743efef04"
     }
   ]
 }

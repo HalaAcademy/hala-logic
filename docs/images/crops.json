@@ -55,6 +55,34 @@
       "caption": "ID 29-bit · Payload 64 byte · BRS · Chỉ gói đầu có ACK · Xem JSON để đọc đủ payload",
       "capture": "examples/captures/canfd-ext-tx.json",
       "context": "Offline replay of historical real GPIO capture; not a new CAN FD hardware test"
+    },
+    {
+      "image": "05-canfd-song.png",
+      "raw_file": "05-canfd-song.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        1502
+      ],
+      "title": "Bước 5a · Sóng CAN FD thật trên phần cứng (11-bit/29-bit, 64B, BRS)",
+      "caption": "Thu 32768 mẫu ở 16000 S/s · PB0: RX · PB8: Bus · PB10: TX Host · STM32F103 phản hồi ACK",
+      "capture": "examples/captures/canfd-tx.json",
+      "context": "Live hardware acceptance test on STM32F103 with ST-Link V2; verified with GDB peer ACK"
+    },
+    {
+      "image": "06-flexray-song.png",
+      "raw_file": "06-flexray-song.jpg",
+      "crop_xyxy": [
+        56,
+        634,
+        2304,
+        1502
+      ],
+      "title": "Bước 5b · Sóng FlexRay thật trên phần cứng (Kênh A, payload 254 byte)",
+      "caption": "Thu 98304 mẫu ở 16000 S/s · Static Frame ID 0x123, Cycle 7 · Header CRC và Frame CRC OK",
+      "capture": "examples/captures/flexray-a.json",
+      "context": "Live hardware acceptance test on STM32F103; Channel A 254B payload; verified with GDB"
     }
   ]
 }

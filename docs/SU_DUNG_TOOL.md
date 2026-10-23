@@ -41,3 +41,22 @@ Gửi gói và thu hiện dùng Streaming, không tự sinh peer ACK khi chỉ t
 Fit hiển thị toàn capture, Đầu gói hiện 80 ms quanh gói đầu, +/− zoom, thanh cuộn di chuyển vùng. Bấm hai điểm đặt con trỏ 1/2, hiện Δt; bấm lần thứ ba bắt đầu cặp mới. Tab Gói tin có thời gian, ID/data, CRC/checksum/ACK, chọn hàng xem JSON chi tiết. Tab phép đo có edge count, frequency, period, pulse width, duty; không đủ dữ liệu thì hiện `—`.
 
 CRC đúng chỉ nói về tín hiệu đã giải mã; xác nhận chương trình nhận đúng cần oracle/app state hoặc GDB của người phát triển. Không có đo analog/rise-time điện áp, auto baud, pretrigger/vô hạn hoặc toàn bộ mode trong ma trận.
+
+## Kiểm thử phần cứng nâng cao và xác minh SWD/GDB
+
+Để xác minh toàn diện cả hai chiều (Host phát logic, MCU nhận và giải mã trong SRAM thật):
+
+```sh
+python tests/hardware/advanced_tx_acceptance.py
+```
+
+Quy trình tự động thực hiện 4 ca kiểm thử trên STM32F103 qua ST-Link V2:
+1. **CAN FD Standard (11-bit)**: Nạp `canfd-tx`, Host phát frame 64 byte payload với BRS (Nominal 1000 bit/s, Data 2000 bit/s), xác minh MCU kéo bit ACK và đọc đúng toàn bộ 64 byte trong RAM qua OpenOCD/GDB.
+2. **CAN FD Extended (29-bit)**: Nạp `canfd-tx-ext`, Host phát frame 64 byte ID mở rộng `0x1234567`, xác minh ACK và tính toàn vẹn CRC 21-bit.
+3. **FlexRay Kênh A**: Nạp `flexray-tx-a`, Host phát Static Frame 254 byte payload, kiểm tra Header CRC (11-bit) và Frame CRC (24-bit) trong bộ đệm nhận của MCU.
+4. **FlexRay Kênh B**: Nạp `flexray-tx-b`, Host phát Static Frame 254 byte trên kênh thứ hai, xác minh độc lập kênh truyền.
+5. **Khôi phục**: Tự động flash lại firmware mẫu `pwm` và khôi phục trạng thái an toàn.
+
+![Biểu đồ timing CAN FD trên phần cứng](images/hardware/canfd_timing_plot.png)
+
+![Biểu đồ timing FlexRay trên phần cứng](images/hardware/flexray_timing_plot.png)

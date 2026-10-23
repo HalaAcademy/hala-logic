@@ -1,0 +1,61 @@
+{
+  "capture": {
+    "id": 1,
+    "state": 2,
+    "count": 98304,
+    "remaining": 2048,
+    "ticks": 4500,
+    "requested_hz": 16000,
+    "port": 1,
+    "mask": 1,
+    "t0_cycles": 84518389,
+    "t0_ms": 1178,
+    "dma_flags": 48,
+    "stream": 1,
+    "produced": 98304,
+    "target": 98304,
+    "ready0": 0,
+    "ready1": 0,
+    "lost": 0,
+    "host_stream": {
+      "max_poll_gap_ms": 17.766999997547828,
+      "max_block_service_ms": 16.026249999413267,
+      "half_buffer_budget_ms": 64.0
+    }
+  },
+  "monitor": {
+    "version": "BP-AB-MASTER-20261023-R002-dev9",
+    "running": 1,
+    "boot_reason": 1,
+    "image_error": 0,
+    "b_flash": 134242304,
+    "b_ram": 536883200,
+    "vtor": 536870912,
+    "clock_error": 0,
+    "ticks": 6981,
+    "usb_errors": 0,
+    "fault_pc": 0,
+    "fault_cfsr": 0,
+    "capture_max": 2048
+  },
+  "registers_after_capture": null,
+  "raw_sha256": "5ff1985c93d08e47fa3e44a5a2e2ec3065dee0b7cc071bcd8e03d8f743efef04",
+  "decoded": [
+    {
+      "sample": 40425,
+      "time_s": 2.526625,
+      "id": 291,
+      "cycle": 7,
+      "length": 254,
+      "data": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfd",
+      "channel": "A",
+      "header_crc": 374,
+      "header_crc_ok": true,
+      "frame_crc": 5752512,
+      "frame_crc_ok": true,
+      "format_ok": true,
+      "tss_bits": 9.0
+    }
+  ],
+  "timing_note": "Relative timestamps use (index+1)*TIM2_ticks/72MHz; DMA bus latency and oscillator tolerance are not calibrated."
+}

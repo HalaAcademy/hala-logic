@@ -63,6 +63,36 @@ Với LIN/CAN/CAN FD/FlexRay, xem [bảng mode và giới hạn](SU_DUNG_TOOL.md
 
 Ảnh này là bản thu CAN FD lịch sử, không phải một lần phát CAN FD mới. Chỉ gói đầu có ACK; CRC đúng không đồng nghĩa chương trình nhận đã xử lý đúng. Chọn hàng để xem đủ payload và các trường kiểm tra trong JSON chi tiết.
 
+## Bước 5a — Sóng và gói CAN FD trên phần cứng thật
+
+Để kiểm tra CAN FD trên phần cứng:
+- Cài firmware ví dụ nhận CAN FD: `python tools/lab.py flash canfd-tx` (11-bit) hoặc `canfd-tx-ext` (29-bit).
+- Trên GUI, chọn **CAN FD**, ID `0x5AA` (Standard) hoặc `0x1234567` (Extended), payload 64 byte, BRS bật (Nominal 1000 bit/s, Data 2000 bit/s).
+- Cấu hình Streaming `16000` S/s, `32768` mẫu, chân decode `8`.
+- Bấm **Gửi gói và thu**: Host phát frame qua PB10, firmware STM32F103 trên PB0 nhận dạng đúng và gửi bit ACK phản hồi trên bus PB8.
+
+![Bước 5a: Sóng CAN FD thật trên phần cứng](images/05-canfd-song.png)
+
+Mở bản thu CAN FD phần cứng thật ngoại tuyến:
+```sh
+python tools/lab.py gui --open examples/captures/canfd-tx.json
+```
+
+## Bước 5b — Sóng và gói FlexRay trên phần cứng thật
+
+Với chuẩn FlexRay trong hệ thống ô tô an toàn cao:
+- Cài firmware ví dụ nhận FlexRay: `python tools/lab.py flash flexray-tx-a` (Kênh A) hoặc `flexray-tx-b` (Kênh B).
+- Trên GUI, chọn **FlexRay**, Channel **A** (hoặc B), Frame ID `291` (`0x123`), Cycle `7`, Payload chẵn tối đa `254` byte.
+- Cấu hình Streaming `16000` S/s, `98304` mẫu để bao trọn khung truyền tĩnh (Static Frame).
+- Bấm **Gửi gói và thu**: Tool giải mã đầy đủ chuỗi TSS, Frame ID, Header CRC (11-bit), payload 254 byte và Frame CRC (24-bit) đạt chuẩn `OK`.
+
+![Bước 5b: Sóng FlexRay thật trên phần cứng](images/06-flexray-song.png)
+
+Mở bản thu FlexRay phần cứng thật ngoại tuyến:
+```sh
+python tools/lab.py gui --open examples/captures/flexray-a.json
+```
+
 ## Bước 6 — Lưu và mở lại
 
 Bấm **Lưu bản thu**, chọn tên JSON. Tool chép các file hiện có cùng tên gốc: JSON, BIN, CSV, VCD, PNG. Giữ JSON/BIN cùng nhau để kiểm SHA256 và mở lại; capture mẫu phân phối chỉ có JSON/BIN nên không tự sinh CSV/VCD/PNG khi chép.
